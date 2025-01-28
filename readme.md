@@ -31,12 +31,11 @@ Buon divertimento e confermate lettura come al solito.
   3. [ DONE ] partire dalla visualizzazione Desktop First 
   4. [ DONE ] iniziare a inserire i contenuti nella side-bar | time 2h
   5. [ DONE ] analizzare e impostare struttura a blocchi della parte main| time 1h45min
-  6. analizzare e impostare struttura a blocchi della parte del player
-
+  6. iniziare a inserire i contenuti nel main e stilizzarli
 
   DAY 2
 
-  1. inserire i contenuti nel main e nel footer
+  1. analizzare e impostare struttura a blocchi della parte del player
   2. iniziare a impostare media-query
   3. inserire dettagli pagina (comportamenti all Hover)
   4. iniziare controlli sul progetto

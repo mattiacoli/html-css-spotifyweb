@@ -20,7 +20,8 @@
 
 /* Commons */
 :root{
-  --spot-primary-dark:#000000;
+  --spot-primary-darker:#000000;
+  --spot-bg-primary-dark:#141922;
   --spot-lighter:#ffff;
   --spot-light:#a3a3a3;
   --spot-light-dark:#6a6a6a;
@@ -58,7 +59,7 @@ a{
   width: 227px;
   height: 100%;
   min-height: 1008px;
-  background-color: var(--spot-primary-dark);
+  background-color: var(--spot-primary-darker);
   color:var(--spot-lighter);
   flex-direction: column;
   
@@ -171,6 +172,7 @@ main{
   margin: 0 auto;
   height: calc(100vh -90px);
   overflow-y: auto;
+  background-color: var(--spot-bg-primary-dark);
 
   /* main header */
   .main-header{
@@ -196,14 +198,47 @@ main{
 
   /* main-nav */
   nav{
+    margin: 2rem 0;
     justify-content: center;
     
     ul{
       gap: 2rem;
+
+      a{
+        color: var(--spot-light);
+        font-weight: 600;
+        text-transform: uppercase;
+      }
     }
   }
 
   /* recently played */
+
+  #recently-played{
+
+    color: var(--spot-lighter);
+
+    .card{
+      text-align: center;
+      
+
+      .title{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+
+      }
+
+      .subtitle{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--spot-light);
+
+      }
+    }
+
+  }
 
   
 }
