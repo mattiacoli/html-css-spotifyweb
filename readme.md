@@ -30,6 +30,22 @@ Buon divertimento e confermate lettura come al solito.
   2. [ DONE ] impostare macro struttura a blocchi | time 20 min
   3. [ DONE ] partire dalla visualizzazione Desktop First 
   4. [ DONE ] iniziare a inserire i contenuti nella side-bar | time 2h
-  5. analizzare e impostare struttura a blocchi della parte main
+  5. [ DONE ] analizzare e impostare struttura a blocchi della parte main| time 1h45min
+  6. analizzare e impostare struttura a blocchi della parte del player
+
+
+  DAY 2
+
+  1. inserire i contenuti nel main e nel footer
+  2. iniziare a impostare media-query
+  3. inserire dettagli pagina (comportamenti all Hover)
+  4. iniziare controlli sul progetto
+
+  DAY 3
+
+  1. Debug della pagina controllare che nulla si rompa e sia responsiva
+  2. sistemare dettagli finali
+  3. se rimane tempo aggiungere degli extra
+
   
 

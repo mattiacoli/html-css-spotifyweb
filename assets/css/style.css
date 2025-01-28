@@ -45,6 +45,11 @@ a{
   display: flex;
 }
 
+.container{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 /* top */
 
 
@@ -172,7 +177,6 @@ main{
     height: 90px;
     background-color: #0000008f;
     position: sticky;
-    min-width: 1200px;
     justify-content: end;
     align-items: center;
 
@@ -198,6 +202,9 @@ main{
       gap: 2rem;
     }
   }
+
+  /* recently played */
+
   
 }
 

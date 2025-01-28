@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify Web App</title>
   <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+ 
+  <!-- column css -->
+  <link rel="stylesheet" href="./assets/css/columns.css">
   <!-- css style -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
-<body class="">
-  
+
+<body>
+
   <!-- top -->
   <div class="top d-flex">
     <!-- sidebar -->
     <div id="sidebar" class="d-flex">
       <div class="logo">
-        <a href=""><img src="./assets/img/logo.svg" alt=""></a>        
+        <a href=""><img src="./assets/img/logo.svg" alt=""></a>
       </div>
 
       <!-- naavbar -->
@@ -57,9 +66,9 @@
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
-        </ul>   
+        </ul>
 
-      </div>  
+      </div>
       <!-- /playlist -->
 
       <!-- foot-sidebar -->
@@ -84,20 +93,20 @@
 
 
 
-    </div>  
+    </div>
 
     <!-- main -->
     <main class="bg-main debug">
 
       <!-- main-header-->
-     <header class="main-header d-flex">
-      <div class="upgrade-button">
-        EFFETTUA L'UPGRADE
-      </div>
-     </header>
-     <!-- /main-header -->
+      <header class="main-header d-flex">
+        <div class="upgrade-button">
+          EFFETTUA L'UPGRADE
+        </div>
+      </header>
+      <!-- /main-header -->
 
-     <!-- main-nav -->
+      <!-- main-nav -->
       <nav class="main-nav d-flex">
         <ul class="d-flex">
           <li><a href="#">Lorem.</a></li>
@@ -105,10 +114,54 @@
           <li><a href="#">Lorem.</a></li>
           <li><a href="#">Lorem.</a></li>
           <li><a href="#">Lorem.</a></li>
-          
         </ul>
       </nav>
       <!-- /main nav -->
+
+      <section id="recently-played">
+        <div class="container">
+          <h1>Recently Played</h1>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="for-you">
+        <div class="container">
+          <h1>Creato per John Doe</h1>
+          <span>Piu` ascolti, piu` accurati saranno i suggerimenti.</span>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="most-popular">
+        <div class="container">
+          <h1>Artisti piu` popolari</h1>
+          <span>Piu` ascolti, piu` accurati saranno i suggerimenti.</span>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </section>
+
 
     </main>
 
@@ -122,4 +175,5 @@
 
 
 </body>
+
 </html>
