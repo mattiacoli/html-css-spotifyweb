@@ -13,18 +13,8 @@
     border: 1px dashed;
   }
 
-/*   .bg-sidebar{
-    background-color: #9a13ec;
-    min-height: 1008px;
-  } */
+  background-color: #adff2f;
 
-  .bg-main{
-    background-color: #e7ec13;
-  }
-
-  .bg-bottom{
-    background-color: #68cd69;
-  }
 }
 
 
@@ -166,13 +156,36 @@ ul{
 }
 
 
-
-
 /* main */
 main{
   width: 100%;
+  margin: 0 auto;
   height: calc(100vh -90px);
   overflow-y: auto;
+
+  /* main header */
+  .main-header{
+    height: 90px;
+    background-color: #0000008f;
+    position: sticky;
+    min-width: 1200px;
+    justify-content: end;
+    align-items: center;
+
+  
+
+    .upgrade-button{
+      width:  218px;
+      color: var(--spot-lighter);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0.5rem;
+      border: 1px solid var(--spot-lighter);
+      border-radius: 20px;
+    }
+  }
+  
 }
 
 .bottom{
