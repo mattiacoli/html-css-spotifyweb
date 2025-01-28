@@ -26,9 +26,9 @@ Buon divertimento e confermate lettura come al solito.
 
   DAY 1 
 
-  1. ispezionare screen su penpot
-  2. impostare macro struttura a blocchi 
-  3. partire dalla visualizzazione Desktop First
+  1. [ DONE ] ispezionare screen su penpot   | time 10 min
+  2. [ DONE ] impostare macro struttura a blocchi | time 20 min
+  3. [ DONE ] partire dalla visualizzazione Desktop First 
   4. iniziare a inserire i contenuti nella side-bar
   5. analizzare struttura a blocchi della parte main
 

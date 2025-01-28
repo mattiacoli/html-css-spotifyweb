@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Debug */
+
+.debug{
+  *{
+    border: 1px dashed;
+  }
+
+  .bg-sidebar{
+    background-color: #9a13ec;
+    min-height: 1008px;
+  }
+
+  .bg-main{
+    background-color: #e7ec13;
+  }
+
+  .bg-bottom{
+    background-color: #68cd69;
+  }
+}
+
+/* utility */
+.d-flex{
+  display: flex;
+}
+
+/* top */
+
+
+
+#sidebar{
+  width: 227px;
+  height: 100%;
+}
+
+
+main{
+  width: 100%;
+  height: calc(100vh -90px);
+  overflow-y: auto;
+}
+
+.bottom{
+
+  height: 90px;
+
+}
