@@ -13,10 +13,10 @@
     border: 1px dashed;
   }
 
-  .bg-sidebar{
+/*   .bg-sidebar{
     background-color: #9a13ec;
     min-height: 1008px;
-  }
+  } */
 
   .bg-main{
     background-color: #e7ec13;
@@ -29,9 +29,22 @@
 
 
 /* Commons */
+:root{
+  --spot-primary-dark:#000000;
+  --spot-lighter:#ffff;
+  --spot-light:#a3a3a3;
+  --spot-light-dark:#6a6a6a;
+  --spot-accent:#adff2f;
+}
+
 body{
   font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
+
+ul{
+  list-style: none;
+}
+
 
 /* utility */
 .d-flex{
@@ -41,11 +54,15 @@ body{
 /* top */
 
 
-
+/* sidebar */
 #sidebar{
   width: 227px;
   height: 100%;
-
+  background-color: var(--spot-primary-dark);
+  color:var(--spot-lighter);
+  flex-direction: column;
+  
+  /* logo */
   .logo {
     padding: 0.5rem;
     margin: 0.5rem, 1.25rem; 
@@ -53,17 +70,15 @@ body{
     img{
     min-width: 135px;
   }
-  }
-    
+  }  
 
-
+  /* navbar */
   nav{
     padding: 1rem 0;
-    color: white;
+  
 
     ul{
 
-      list-style: none; 
       line-height: 1.5rem;
       font-weight: 600 ;
       font-size: 14px;
@@ -84,7 +99,36 @@ body{
   }
 }
 
+/* Playlist */
 
+.playlist{
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  
+  h2{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .create-playlist{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+
+   
+  }
+
+  .your-playlist{
+    line-height: 2rem;
+  }
+
+
+
+}
+
+
+/* main */
 main{
   width: 100%;
   height: calc(100vh -90px);
