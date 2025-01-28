@@ -58,6 +58,7 @@ ul{
 #sidebar{
   width: 227px;
   height: 100%;
+  min-height: 1008px;
   background-color: var(--spot-primary-dark);
   color:var(--spot-lighter);
   flex-direction: column;
@@ -97,35 +98,74 @@ ul{
     }
 
   }
-}
 
-/* Playlist */
+  /* Playlist */
 
-.playlist{
-  padding-left: 1rem;
-  line-height: 1.5rem;
+  .playlist{
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    color: var(--spot-light-dark);
+    flex-grow: 1;
   
-  h2{
+   h2{
+    color: var(--spot-lighter);
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 800;
-  }
+   }
 
-  .create-playlist{
+   .create-playlist{
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 600;
 
    
-  }
+   }
 
-  .your-playlist{
+    .your-playlist{
     line-height: 2rem;
-  }
+    }
+  }  
 
+
+  /* foot-side */
+  #foot-side{
+    color: var(--spot-light-dark);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+
+
+    .install{
+      padding: 1rem, 0;
+      font-size: 12px;
+      margin-bottom: 1rem;
+      width: 90%;
+      border-bottom: 1px solid var(--spot-light-dark);
+    }
+
+
+
+    figure{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-color:var(--spot-light-dark);
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    h4{
+      display: inline-block;
+    }
+
+  }
+  
 
 
 }
+
+
 
 
 /* main */
