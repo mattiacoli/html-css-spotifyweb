@@ -35,6 +35,10 @@ ul{
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 /* utility */
 .d-flex{
@@ -183,6 +187,15 @@ main{
       padding: 0.5rem;
       border: 1px solid var(--spot-lighter);
       border-radius: 20px;
+    }    
+  }
+
+  /* main-nav */
+  nav{
+    justify-content: center;
+    
+    ul{
+      gap: 2rem;
     }
   }
   
