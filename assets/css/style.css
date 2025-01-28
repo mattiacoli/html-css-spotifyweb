@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -25,6 +27,12 @@
   }
 }
 
+
+/* Commons */
+body{
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
 /* utility */
 .d-flex{
   display: flex;
@@ -37,6 +45,43 @@
 #sidebar{
   width: 227px;
   height: 100%;
+
+  .logo {
+    padding: 0.5rem;
+    margin: 0.5rem, 1.25rem; 
+    
+    img{
+    min-width: 135px;
+  }
+  }
+    
+
+
+  nav{
+    padding: 1rem 0;
+    color: white;
+
+    ul{
+
+      list-style: none; 
+      line-height: 1.5rem;
+      font-weight: 600 ;
+      font-size: 14px;
+      
+
+      li{
+        padding: 0.5rem 1rem;
+        display: flex;
+        gap: 1rem;
+        
+      }
+      
+      li img{
+        width: 20px;
+      }
+    }
+
+  }
 }
 
 
