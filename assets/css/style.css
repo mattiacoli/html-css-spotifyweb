@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 500ms;
 }
 
 /* Debug */
@@ -52,7 +53,9 @@ a{
 }
 
 /* top */
-
+.top{
+  height: calc(100vh - 90px);
+}
 
 /* sidebar */
 #sidebar{
@@ -104,6 +107,8 @@ a{
     line-height: 1.5rem;
     color: var(--spot-light-dark);
     flex-grow: 1;
+    overflow-y: auto;
+    
   
    h2{
     color: var(--spot-lighter);
@@ -116,12 +121,14 @@ a{
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 600;
+    
 
    
    }
 
     .your-playlist{
     line-height: 2rem;
+    /* overflow-y: auto; */
     }
   }  
 
@@ -166,9 +173,9 @@ a{
 
 /* main */
 main{
-  width: 100%;
+  width: calc(100% - 227px);
   margin: 0 auto;
-  height: calc(100vh -90px);
+  
   overflow-y: auto;
   background-color: var(--spot-bg-primary-dark);
 
@@ -197,6 +204,8 @@ main{
     height: 90px;
     background-color: #0000008f;
     position: sticky;
+    top: 0;
+    right: 0;
     justify-content: end;
     align-items: center;
 
@@ -204,6 +213,7 @@ main{
 
     .upgrade-button{
       width:  218px;
+      margin-right: 1rem;
       color: var(--spot-lighter);
       font-size: 14px;
       font-weight: 700;
@@ -260,5 +270,6 @@ main{
 .bottom{
 
   height: 90px;
+  background-color: var(--spot-light-dark);
 
 }

@@ -35,6 +35,7 @@ Buon divertimento e confermate lettura come al solito.
 
   DAY 2
 
+  1. [ DONE ] correzione bug con i consigli durante la lezione
   1. analizzare e impostare struttura a blocchi della parte del player
   2. iniziare a impostare media-query
   3. inserire dettagli pagina (comportamenti all Hover)
