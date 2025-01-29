@@ -37,7 +37,7 @@ Buon divertimento e confermate lettura come al solito.
 
   1. [ DONE ] correzione bug con i consigli durante la lezione | time 1h
   1. [ DONE ] analizzare e impostare struttura a blocchi della parte del player |time 50 min
-  2. iniziare a impostare media-query
+  2. [ DONE ] iniziare a impostare media-query | time 3h
   3. inserire dettagli pagina (comportamenti all Hover)
   4. iniziare controlli sul progetto
 
