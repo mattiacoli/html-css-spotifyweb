@@ -26,6 +26,7 @@
   --spot-lighter:#ffff;
   --spot-light:#a3a3a3;
   --spot-light-dark:#6a6a6a;
+  --spot-bg-player:#282828;
   --spot-accent:#adff2f;
 }
 
@@ -261,15 +262,60 @@ main{
 
   }
 
-  #most-popular img{
-    border-radius: 50%;
-  }
-  
+
+  /* most popular */
+  #most-popular{
+
+    .title{
+      text-align: center;
+    }
+
+    img{
+      border-radius: 50%;
+    }  
+  } 
 }
 
+
+/* bottom */
 .bottom{
 
   height: 90px;
-  background-color: var(--spot-light-dark);
+  background-color: var(--spot-bg-player);
+  justify-content: space-between;
+
+  /* left-player */
+  .left{
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    
+    img{
+
+      float: left;  
+    }
+
+    .title{
+      color: var(--spot-lighter);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .artist{
+      color: var(--spot-light);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    i{
+      color: var(--spot-light);
+    }
+  }
+
+  /* middle-player */
+
+ 
+  
 
 }
