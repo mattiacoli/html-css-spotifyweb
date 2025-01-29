@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 300ms;
+  transition: all 100ms;
 }
 
 
@@ -53,7 +53,7 @@ a {
 #sidebar {
   width: 227px;
   background-color: var(--spot-primary-darker);
-  color: var(--spot-lighter);
+  color: var(--spot-light-dark);
   flex-direction: column;
   justify-content: space-between;
 
@@ -106,6 +106,13 @@ a {
           display: flex;
           gap: 1rem;
 
+          &:hover{
+            cursor: pointer;
+            color: var(--spot-lighter);
+            font-weight: 700;
+            border-left: 3px solid var(--spot-accent);
+          }
+
         }
 
         li img {
@@ -126,6 +133,8 @@ a {
     color: var(--spot-light-dark);
     overflow-y: auto;
 
+   
+
 
     h2 {
       color: var(--spot-lighter);
@@ -139,13 +148,24 @@ a {
       font-size: 1rem;
       font-weight: 600;
 
-
-
+      &:hover{
+        cursor: pointer;
+        color: var(--spot-lighter);
+      }
     }
 
     .your-playlist {
       line-height: 2rem;
-      /* overflow-y: auto; */
+
+      li{
+        &:hover{
+          cursor: pointer;
+          color: var(--spot-lighter);
+          font-weight: 500;
+        }
+      }
+      
+    
     }
   }
 
@@ -180,6 +200,11 @@ a {
       background-color: var(--spot-light-dark);
       border-radius: 50%;
       text-align: center;
+
+      &:hover{
+        background-color: var(--spot-light);
+      }
+
     }
 
     h4 {
@@ -188,6 +213,11 @@ a {
       @media screen and (max-width:552px) {
         display: none;
       }
+    }
+
+    &:hover{
+      cursor: pointer;
+      color: var(--spot-lighter);
     }
 
   }
@@ -245,6 +275,12 @@ main {
       padding: 0.5rem;
       border: 1px solid var(--spot-lighter);
       border-radius: 20px;
+
+      &:hover{
+        font-weight: 800;
+        border: 4px solid var(--spot-lighter) ;
+        cursor: pointer;
+      }
     }
   }
 
@@ -260,12 +296,17 @@ main {
       justify-content: center;
       flex-wrap: wrap;
 
-
-
       a {
         color: var(--spot-light);
         font-weight: 600;
         text-transform: uppercase;
+        padding: 0.5rem 0;
+
+        &:hover{
+          color: var(--spot-lighter);
+          border-bottom: 2px solid var(--spot-accent);
+      
+        }
       }
     }
   }
