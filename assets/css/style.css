@@ -339,7 +339,6 @@ main{
         font-weight: 600;
       }
 
-
       .time-bar{
         min-width: 300px;
         height: 4px;
@@ -354,6 +353,30 @@ main{
         background-color: var(--spot-light);
         border-radius: 8px;
       }
+    }
+  }
+
+  /* right */
+
+  .right{
+    color: var(--spot-light);
+    gap: 1rem;
+    align-items: center;
+
+    .volume-bar{
+      margin-right: 1rem;
+      width: 100px;
+      height: 3px;
+      background-color: var(--spot-light-dark);
+      position: relative;
+      border-radius: 8px;   
+    }
+
+    .volume{
+      width: 50px;
+      height: 3px;
+      background-color: var(--spot-light);
+      border-radius: 8px;
     }
   }
 
