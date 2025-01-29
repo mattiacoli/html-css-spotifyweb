@@ -4,18 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 500ms;
-}
-
-/* Debug */
-
-.debug{
-  *{
-    border: 1px dashed;
-  }
-
-  background-color: #adff2f;
-
+  /* transition: all 300ms; */
 }
 
 
@@ -208,9 +197,7 @@ main{
     top: 0;
     right: 0;
     justify-content: end;
-    align-items: center;
-
-  
+    align-items: center;  
 
     .upgrade-button{
       width:  218px;
@@ -230,6 +217,7 @@ main{
     margin: 2rem 0;
     justify-content: center;
     
+    
     ul{
       gap: 2rem;
 
@@ -243,13 +231,10 @@ main{
 
   /* recently played */
 
-  #recently-played{
-
-    
+  #recently-played{    
 
     .card{
-      text-align: center;
-      
+      text-align: center;    
 
 
       .subtitle{
@@ -291,10 +276,6 @@ main{
     align-items: center;
     gap: 1rem; 
     
-    img{
-
-      float: left;  
-    }
 
     .title{
       color: var(--spot-lighter);
@@ -309,6 +290,7 @@ main{
     }
 
     i{
+      padding-left: 1rem;
       color: var(--spot-light);
     }
   }
@@ -379,8 +361,20 @@ main{
       border-radius: 8px;
     }
   }
-
- 
-  
-
 }
+
+
+/* ######### MEDIA QUERY ######## */
+
+
+/* screen max-width 878px */
+@media screen and (max-width:878px) {
+
+  main .col-md-4{
+    width: calc(100% / 4);
+  }
+  
+}
+
+
+
