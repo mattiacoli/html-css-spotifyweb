@@ -1,4 +1,9 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* col structure*/
+@import url(./columns.css);
+
 
 /* Reset */
 * {
@@ -170,8 +175,6 @@ a {
           font-weight: 500;
         }
       }
-
-
     }
   }
 
@@ -186,7 +189,7 @@ a {
 
     .install {
       margin-left: 0.5rem;
-      padding: 1rem, ;
+      padding: 1rem, 0 ;
       font-size: 12px;
       margin-bottom: 1rem;
       width: 90%;
@@ -195,12 +198,20 @@ a {
 
 
       @media screen and (max-width:570px) {
-        border-bottom: 1px transparent;
+
+        border-bottom: 1px transparent;        
+    
       }
     }
 
     .profile {
       padding-left: 0.5rem;
+
+      @media screen and (max-width:570px){
+        
+        padding-left: 0;
+    
+      }
 
 
       figure {
@@ -215,6 +226,8 @@ a {
           background-color: var(--spot-light);
         }
 
+
+
       }
 
       h4 {
@@ -225,14 +238,7 @@ a {
         }
       }
     }
-
-
-
-
   }
-
-
-
 }
 
 
@@ -405,6 +411,7 @@ main {
   background-color: var(--spot-bg-player);
   justify-content: space-between;
   position: sticky;
+  overflow-x: hidden;
 
   /* left-player */
   .left {
@@ -527,16 +534,35 @@ main {
         background-color: var(--spot-light);
         border-radius: 8px;
 
+        .circle{
+          color: var(--spot-lighter);
+          font-size: 11px;
+          position: absolute;
+          top: -5px;
+          left: 70px;
+          display: none;
+        }
+
         &:hover {
           background-color: var(--spot-accent);
+
+          .circle{
+            display: block;
+          }
         }
 
         @media screen and (max-width:878px) {
           width: 50px;
+
+          .circle{
+            left: 30px;
+          }
         }
 
         @media screen and (max-width: 640px) {
+          
           width: 40px;
+          
         }
       }
     }
@@ -592,8 +618,22 @@ main {
       background-color: var(--spot-light);
       border-radius: 8px;
 
+      .circle{
+        color: var(--spot-lighter);
+        font-size: 11px;
+        position: absolute;
+        top: -5px;
+        left: 45px;
+        display: none;
+      }
+
       &:hover {
         background-color: var(--spot-accent);
+
+        .circle{
+          display: block;
+        }
+
       }
 
       @media screen and (max-width:878px) {
@@ -627,9 +667,6 @@ main {
   main .col-md-4 {
     width: calc(100% / 4);
   }
-
-
-
 }
 
 
@@ -639,11 +676,9 @@ main {
   main .col-sm-6 {
     width: 50%;
   }
-
-
-
 }
 
+/* screen max-width 570px */
 @media screen and (max-width:570px) {
   #sidebar {
     width: 60px;
