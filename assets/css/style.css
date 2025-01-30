@@ -223,6 +223,7 @@ a {
         background-color: var(--spot-light-dark);
         border-radius: 50%;
         text-align: center;
+        margin-right: 0.5rem;
 
         &:hover {
           background-color: var(--spot-light);

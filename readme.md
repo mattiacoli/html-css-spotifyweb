@@ -43,9 +43,9 @@ Buon divertimento e confermate lettura come al solito.
 
   DAY 3
 
-  1. [ DONE ]  Debug della pagina controllare che nulla si rompa e sia responsiva |30 min
-  2. [ DONE ] sistemare dettagli finali
-  3. se rimane tempo aggiungere degli extra
+  1. [ DONE ]  Debug della pagina controllare che nulla si rompa e sia responsiva |time 30 min
+  2. [ DONE ] sistemare dettagli finali | time 30 min
+  
 
   
 
