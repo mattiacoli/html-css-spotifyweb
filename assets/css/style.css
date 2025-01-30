@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 100ms;
+  transition: all 500ms;
 }
 
 
@@ -42,6 +42,13 @@ a {
   padding-right: 2rem;
 }
 
+.hover-white{
+  &:hover{
+    cursor: pointer;
+    color: var(--spot-lighter);
+  }
+}
+
 
 
 /* top */
@@ -66,14 +73,14 @@ a {
     /* logo */
     .logo-big {
 
-      padding: 0.5rem;
+      padding:1rem;
       margin: 1rem, 1.25rem;
 
       img {
         width: 135px;
       }
 
-      @media screen and (max-width:552px) {
+      @media screen and (max-width:570px) {
         display: none;
       }
 
@@ -82,7 +89,7 @@ a {
     .logo-small {
       display: none;
 
-      @media screen and (max-width:552px) {
+      @media screen and (max-width:570px) {
         display: block;
         
       }
@@ -105,12 +112,13 @@ a {
           padding: 0.5rem 1rem;
           display: flex;
           gap: 1rem;
+          border-left: 3px inset transparent;
 
           &:hover{
-            cursor: pointer;
-            color: var(--spot-lighter);
+            /* cursor: pointer;
+            color: var(--spot-lighter); */
             font-weight: 700;
-            border-left: 3px solid var(--spot-accent);
+            border-left: 3px inset var(--spot-accent);
           }
 
         }
@@ -130,10 +138,7 @@ a {
   .playlist {
     padding-left: 1rem;
     line-height: 1.5rem;
-    color: var(--spot-light-dark);
-    overflow-y: auto;
-
-   
+    color: var(--spot-light-dark); 
 
 
     h2 {
@@ -147,6 +152,10 @@ a {
       margin: 1rem 0;
       font-size: 1rem;
       font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
 
       &:hover{
         cursor: pointer;
@@ -156,6 +165,8 @@ a {
 
     .your-playlist {
       line-height: 2rem;
+      height: calc(100vh - 70px - 470px);
+      overflow-y: auto;
 
       li{
         &:hover{
@@ -176,22 +187,34 @@ a {
     padding-left: 1rem;
     margin-bottom: 1rem;
     line-height: 2rem;
-
+    
 
     .install {
       margin-left: 0.5rem;
-      padding: 1rem, 0;
+      padding: 1rem, ;
       font-size: 12px;
       margin-bottom: 1rem;
       width: 90%;
       border-bottom: 1px solid var(--spot-light-dark);
 
-      @media screen and (max-width:552px) {
+      &:hover{
+        cursor: pointer;
+        color: var(--spot-lighter);
+      }
+
+      @media screen and (max-width:570px) {
         border-bottom: 1px transparent;
       }
     }
 
+    .profile{
+      padding-left: 0.5rem;
 
+      &:hover{
+        cursor: pointer;
+        color: var(--spot-lighter);
+      }
+    }
 
     figure {
       display: inline-block;
@@ -210,15 +233,12 @@ a {
     h4 {
       display: inline-block;
 
-      @media screen and (max-width:552px) {
+      @media screen and (max-width:570px) {
         display: none;
       }
     }
 
-    &:hover{
-      cursor: pointer;
-      color: var(--spot-lighter);
-    }
+  
 
   }
 
@@ -291,8 +311,8 @@ main {
 
 
     ul {
-      font-size: 14px;
-      gap: 1.5rem;
+      font-size: 12px;
+      gap: 1rem;
       justify-content: center;
       flex-wrap: wrap;
 
@@ -302,17 +322,18 @@ main {
         text-transform: uppercase;
         padding: 0.5rem 0;
 
+       
         &:hover{
           color: var(--spot-lighter);
           border-bottom: 2px solid var(--spot-accent);
       
-        }
+        } 
       }
     }
   }
 
 
-
+  /* album */
   .card:hover{
     cursor: pointer;        
   }
@@ -377,12 +398,15 @@ main {
   /* most popular */
   #most-popular {
 
+    
     .title {
       text-align: center;
     }
 
     img {
       border-radius: 50%;
+
+     
     }
 
   }
@@ -393,10 +417,10 @@ main {
 .bottom {
 
   width: 100%;
-
   height: 90px;
   background-color: var(--spot-bg-player);
   justify-content: space-between;
+  position: sticky;
 
   /* left-player */
   .left {
@@ -405,9 +429,11 @@ main {
     align-items: center;
     gap: 0.5rem;
 
-    @media screen and (max-width: 552px) {
+    @media screen and (max-width: 570px) {
       padding: 0 0.25rem;
       gap: 0.25rem;
+
+   
       
     }
 
@@ -417,7 +443,7 @@ main {
       font-size: 14px;
       font-weight: 700;
 
-      @media screen and (max-width: 552px) {
+      @media screen and (max-width: 570px) {
         
         font-size: 12px;
 
@@ -428,13 +454,24 @@ main {
       color: var(--spot-light);
       font-size: 12px;
       font-weight: 500;
+
+      &:hover{
+        color: var(--spot-lighter);
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
 
     i {
       padding-left: 1rem;
       color: var(--spot-light);
 
-      @media screen and (max-width: 552px) {
+      &:hover{
+        cursor: pointer;
+        color: var(--spot-lighter);
+      }
+
+      @media screen and (max-width: 570px) {
         
        padding-left: 0.25rem;
 
@@ -455,7 +492,12 @@ main {
       gap: 1.5rem;
       justify-content: center;
 
-      @media screen and (max-width: 552px) {
+      i:hover{
+        cursor: pointer;
+        font-size: 1.75rem;
+      }
+
+      @media screen and (max-width: 570px) {
         
         font-size: 1rem;
         gap: 1rem;
@@ -482,6 +524,10 @@ main {
         position: relative;
         border-radius: 8px;
 
+        &:hover{
+          cursor: pointer;
+        }
+
         @media screen and (max-width:878px) {
           width: 240px;
         }
@@ -491,7 +537,7 @@ main {
           font-size: 11px;
         }
 
-        @media screen and (max-width: 552px) {
+        @media screen and (max-width: 570px) {
           width: 110px;
         }
       }
@@ -501,6 +547,10 @@ main {
         height: 4px;
         background-color: var(--spot-light);
         border-radius: 8px;
+
+        &:hover{
+          background-color: var(--spot-accent);
+        }
 
         @media screen and (max-width:878px) {
           width: 50px;
@@ -520,6 +570,10 @@ main {
     gap: 1rem;
     align-items: center;
     font-size: 12px;
+
+    &:hover{
+      cursor:pointer;
+    }
 
     @media screen and (max-width:640px){
       gap: 0.3rem;
@@ -545,7 +599,7 @@ main {
         margin-right: 0.5rem;
       }
 
-      @media screen and (max-width:552px){
+      @media screen and (max-width:570px){
         width: 50px;
         margin-right: 0.2px;
       }
@@ -559,6 +613,10 @@ main {
       background-color: var(--spot-light);
       border-radius: 8px;
 
+      &:hover{
+        background-color: var(--spot-accent);
+      }
+
       @media screen and (max-width:878px) {
         width: 70px;
         margin-right: 0.5rem;
@@ -570,7 +628,7 @@ main {
         margin-right: 0.5rem;
       }
 
-      @media screen and (max-width:552px){
+      @media screen and (max-width:570px){
         width: 20px;
         margin-right: 0.2px;
       }
@@ -605,7 +663,7 @@ main {
 
 }
 
-@media screen and (max-width:552px) {
+@media screen and (max-width:570px) {
   #sidebar {
     width: 60px;
 
