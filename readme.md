@@ -39,11 +39,11 @@ Buon divertimento e confermate lettura come al solito.
   1. [ DONE ] analizzare e impostare struttura a blocchi della parte del player |time 50 min
   2. [ DONE ] iniziare a impostare media-query | time 3h
   3. [ DONE ] inserire dettagli pagina (comportamenti all Hover) | time 1h
-  4. iniziare controlli sul progetto
+  4. [ DONE ] iniziare controlli sul progetto |time 1h
 
   DAY 3
 
-  1. Debug della pagina controllare che nulla si rompa e sia responsiva
+  1. [ DONE ]  Debug della pagina controllare che nulla si rompa e sia responsiva |30 min
   2. sistemare dettagli finali
   3. se rimane tempo aggiungere degli extra
 

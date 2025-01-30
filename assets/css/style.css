@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -42,16 +43,15 @@ a {
   padding-right: 2rem;
 }
 
-.hover-white{
-  &:hover{
+.hover-white {
+  &:hover {
     cursor: pointer;
     color: var(--spot-lighter);
   }
 }
 
 
-
-/* top */
+/* #region top */
 .top {
   height: calc(100vh - 90px);
 }
@@ -66,14 +66,14 @@ a {
 
 
   /* sidebar-top */
-  .sidebar-top{
+  .sidebar-top {
 
     justify-content: center;
 
     /* logo */
     .logo-big {
 
-      padding:1rem;
+      padding: 1rem;
       margin: 1rem, 1.25rem;
 
       img {
@@ -91,7 +91,7 @@ a {
 
       @media screen and (max-width:570px) {
         display: block;
-        
+
       }
 
     }
@@ -114,9 +114,9 @@ a {
           gap: 1rem;
           border-left: 3px inset transparent;
 
-          &:hover{
-            /* cursor: pointer;
-            color: var(--spot-lighter); */
+          &:hover {
+            cursor: pointer;
+            color: var(--spot-lighter);
             font-weight: 700;
             border-left: 3px inset var(--spot-accent);
           }
@@ -138,7 +138,7 @@ a {
   .playlist {
     padding-left: 1rem;
     line-height: 1.5rem;
-    color: var(--spot-light-dark); 
+    color: var(--spot-light-dark);
 
 
     h2 {
@@ -156,11 +156,6 @@ a {
       align-items: center;
       gap: 0.5rem;
 
-
-      &:hover{
-        cursor: pointer;
-        color: var(--spot-lighter);
-      }
     }
 
     .your-playlist {
@@ -168,15 +163,15 @@ a {
       height: calc(100vh - 70px - 470px);
       overflow-y: auto;
 
-      li{
-        &:hover{
+      li {
+        &:hover {
           cursor: pointer;
           color: var(--spot-lighter);
           font-weight: 500;
         }
       }
-      
-    
+
+
     }
   }
 
@@ -187,7 +182,7 @@ a {
     padding-left: 1rem;
     margin-bottom: 1rem;
     line-height: 2rem;
-    
+
 
     .install {
       margin-left: 0.5rem;
@@ -197,48 +192,42 @@ a {
       width: 90%;
       border-bottom: 1px solid var(--spot-light-dark);
 
-      &:hover{
-        cursor: pointer;
-        color: var(--spot-lighter);
-      }
+
 
       @media screen and (max-width:570px) {
         border-bottom: 1px transparent;
       }
     }
 
-    .profile{
+    .profile {
       padding-left: 0.5rem;
 
-      &:hover{
-        cursor: pointer;
-        color: var(--spot-lighter);
+
+      figure {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: var(--spot-light-dark);
+        border-radius: 50%;
+        text-align: center;
+
+        &:hover {
+          background-color: var(--spot-light);
+        }
+
+      }
+
+      h4 {
+        display: inline-block;
+
+        @media screen and (max-width:570px) {
+          display: none;
+        }
       }
     }
 
-    figure {
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      background-color: var(--spot-light-dark);
-      border-radius: 50%;
-      text-align: center;
 
-      &:hover{
-        background-color: var(--spot-light);
-      }
 
-    }
-
-    h4 {
-      display: inline-block;
-
-      @media screen and (max-width:570px) {
-        display: none;
-      }
-    }
-
-  
 
   }
 
@@ -296,9 +285,9 @@ main {
       border: 1px solid var(--spot-lighter);
       border-radius: 20px;
 
-      &:hover{
+      &:hover {
         font-weight: 800;
-        border: 4px solid var(--spot-lighter) ;
+        border: 4px solid var(--spot-lighter);
         cursor: pointer;
       }
     }
@@ -322,57 +311,58 @@ main {
         text-transform: uppercase;
         padding: 0.5rem 0;
 
-       
-        &:hover{
+
+        &:hover {
           color: var(--spot-lighter);
           border-bottom: 2px solid var(--spot-accent);
-      
-        } 
+
+        }
       }
     }
   }
 
 
   /* album */
-  .card:hover{
-    cursor: pointer;        
+  .card:hover {
+    cursor: pointer;
   }
 
-  .album:hover .album-overlay{
+  .album:hover .album-overlay {
     display: block;
   }
 
 
-  .album{
+  .album {
     position: relative;
   }
 
-  .album::after{
+  .album::after {
     content: '';
     position: absolute;
-    width: 100%; 
-    height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: all 300mss;
   }
 
-  .album:hover::after{
+  .album:hover::after {
     opacity: 1;
   }
 
-  .album-overlay{
+  .album-overlay {
     font-size: 3.5rem;
     color: var(--spot-lighter);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;   
+    display: none;
     z-index: +1;
   }
-    
+
 
   /* recently played */
 
@@ -386,34 +376,28 @@ main {
         font-size: 14px;
         font-weight: 600;
         color: var(--spot-light);
-
       }
-
-     
     }
-
   }
 
 
   /* most popular */
   #most-popular {
 
-    
     .title {
       text-align: center;
     }
 
     img {
       border-radius: 50%;
-
-     
     }
-
   }
 }
+/* #endregion top */
 
 
-/* bottom */
+
+/* #region bottom */
 .bottom {
 
   width: 100%;
@@ -432,11 +416,7 @@ main {
     @media screen and (max-width: 570px) {
       padding: 0 0.25rem;
       gap: 0.25rem;
-
-   
-      
     }
-
 
     .title {
       color: var(--spot-lighter);
@@ -444,7 +424,7 @@ main {
       font-weight: 700;
 
       @media screen and (max-width: 570px) {
-        
+
         font-size: 12px;
 
       }
@@ -455,10 +435,9 @@ main {
       font-size: 12px;
       font-weight: 500;
 
-      &:hover{
-        color: var(--spot-lighter);
+      &:hover {
         text-decoration: underline;
-        cursor: pointer;
+        color: var(--spot-lighter);
       }
     }
 
@@ -466,14 +445,14 @@ main {
       padding-left: 1rem;
       color: var(--spot-light);
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         color: var(--spot-lighter);
       }
 
       @media screen and (max-width: 570px) {
-        
-       padding-left: 0.25rem;
+
+        padding-left: 0.25rem;
 
       }
     }
@@ -492,13 +471,13 @@ main {
       gap: 1.5rem;
       justify-content: center;
 
-      i:hover{
+      i:hover {
         cursor: pointer;
         font-size: 1.75rem;
       }
 
       @media screen and (max-width: 570px) {
-        
+
         font-size: 1rem;
         gap: 1rem;
 
@@ -524,7 +503,7 @@ main {
         position: relative;
         border-radius: 8px;
 
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
 
@@ -548,7 +527,7 @@ main {
         background-color: var(--spot-light);
         border-radius: 8px;
 
-        &:hover{
+        &:hover {
           background-color: var(--spot-accent);
         }
 
@@ -571,11 +550,11 @@ main {
     align-items: center;
     font-size: 12px;
 
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
     }
 
-    @media screen and (max-width:640px){
+    @media screen and (max-width:640px) {
       gap: 0.3rem;
       font-size: 11px;
     }
@@ -595,16 +574,16 @@ main {
 
       @media screen and (max-width:640px) {
         width: 100px;
-        
+
         margin-right: 0.5rem;
       }
 
-      @media screen and (max-width:570px){
+      @media screen and (max-width:570px) {
         width: 50px;
         margin-right: 0.2px;
       }
 
-     
+
     }
 
     .volume {
@@ -613,7 +592,7 @@ main {
       background-color: var(--spot-light);
       border-radius: 8px;
 
-      &:hover{
+      &:hover {
         background-color: var(--spot-accent);
       }
 
@@ -624,17 +603,19 @@ main {
 
       @media screen and (max-width:640px) {
         width: 50px;
-        
+
         margin-right: 0.5rem;
       }
 
-      @media screen and (max-width:570px){
+      @media screen and (max-width:570px) {
         width: 20px;
         margin-right: 0.2px;
       }
     }
   }
 }
+
+/* #endregion bottom */
 
 
 /* ######### MEDIA QUERY ######## */
