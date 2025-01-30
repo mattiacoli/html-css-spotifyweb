@@ -195,7 +195,9 @@ a {
       width: 90%;
       border-bottom: 1px solid var(--spot-light-dark);
 
-
+      span{
+        padding-left: 0.5rem;
+      }
 
       @media screen and (max-width:570px) {
 
@@ -309,15 +311,16 @@ main {
       font-size: 12px;
       gap: 1rem;
       justify-content: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap;     
+      
 
       a {
         color: var(--spot-light);
         font-weight: 600;
         text-transform: uppercase;
         padding: 0.5rem 0;
-
-
+        position: relative;      
+               
         &:hover {
           color: var(--spot-lighter);
           border-bottom: 2px solid var(--spot-accent);
